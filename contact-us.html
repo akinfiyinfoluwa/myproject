@@ -10,6 +10,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://db.onlinewebfonts.com/c/2aea0ac500c896188f9ad191c231029c?family=Orpheus+Pro" rel="stylesheet">
 <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
   </head>
   <body>
     <div class="contain">
@@ -43,7 +45,14 @@
              font-size: 20px;
              width: 100%;
              height: auto;
-             font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+             font-optical-sizing: auto;
+    font-family: 'Noto Sans Tc', sans-serif; 
+    font-style: normal;
+    font-size: 17.9289px; 
+    font-weight: 300; 
+    letter-spacing: 1px; 
+    line-height: normal ; 
+    overflow-wrap: break-word;
         }
         .first {
             width: 35%;
@@ -69,7 +78,7 @@ input[type=submit] {
   border: none;
    font-size: 15px;
   cursor: pointer;
-  font-family:'Neue Haas Grotesk Display Pro', sans-serif ;
+  font-family:'Noto Sans Tc', sans-serif ;
 }
 
 
@@ -79,7 +88,7 @@ input[type=submit]:hover {
 @media(max-width:1000px){
          .first{
             font-size: 20px;
-        font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+        font-family: 'Noto Sans Tc', sans-serif;
         width: 80%;
           }
           .second {
@@ -111,7 +120,8 @@ input[type=submit]:hover {
             Abuja, NG.</p> <br> <br>
       </div>
       <div class="second">
-    <form action="">
+    <form  id="contact-form">
+      <input type="hidden" name="contact_number" value="697483">
           <div style="display: flex;">
             <label for="fname" style="width: 49%;">First Name</label>
             
@@ -121,15 +131,15 @@ input[type=submit]:hover {
           </div>
    
           <div style="display: flex;">
-            <input type="text" id="fname" name="firstname" placeholder="Your name.." style="width: 49%;">
-            <input type="text" id="lname" name="lastname" placeholder="Your last name.." style="width: 49%; margin-left: 2%;">
+            <input type="text" id="fname" name="user_name" placeholder="Your name.." style="width: 49%;">
+            <input type="text" id="lname" name="user_name" placeholder="Your last name.." style="width: 49%; margin-left: 2%;">
           </div>
         <label for="email">Email</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your email..">
-        <label for="subject">Message</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <input type="text" required id="lname" name="user_email" placeholder="Your email..">
+        <label for="subject" required >Message</label>
+        <textarea id="subject" name="message" placeholder="Write something.." style="height:200px" required></textarea>
     
-        <input type="submit" value="Send">
+        <input type="submit" value="Submit"  onclick="alert('Thanks, your message has been delivered!')">
     
     </form>
     <br> <br>
@@ -137,7 +147,7 @@ input[type=submit]:hover {
     </div>
     <footer>
         <div class="foot-algo">Algolog</div>
-          <section class="wrappo">
+          <section class="wrappo" style="font-family: 'Noto Sans Tc'; font-weight: 300 ;">
             <div class="wrappo-one">2061 Dape District <br>
                 Abuja</div>
                 <div class="wrappo-two">+1 408 728 6249 <br>
@@ -145,5 +155,6 @@ input[type=submit]:hover {
                     info@algolog.co</div>
           </section>
     </footer>
+ 
       </body>
     </html>
