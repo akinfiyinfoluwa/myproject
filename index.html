@@ -5,16 +5,12 @@
     <title>ALGOLOG</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://db.onlinewebfonts.com/c/2aea0ac500c896188f9ad191c231029c?family=Orpheus+Pro" rel="stylesheet">
-<link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
   </head>
   <body>
-    
+  
     <div class="contain">
-        <nav style="z-index: 5;">
+        <nav style="z-index: 5;" id="whole">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <span class="hamburger"></span>
@@ -38,7 +34,18 @@
  <div class="wrapper">
    
     <section class="main"> 
-        <p class="para-text" style="padding-top:15%; padding-right: 22%; ">With our main hub in Abuja and satellite presence in Lagos, 
+      <style>
+     
+        .para-text {
+          letter-spacing: -0.5px;
+       font-family: 'Noto Sans TC';
+       font-size: 17.9289px; font-weight: 300; 
+       line-height: normal ; 
+       overflow-wrap: break-word;
+       padding-top:15%; padding-right: 22%;
+        }
+      </style>
+        <p class="para-text"  >With our main hub in Abuja and satellite presence in Lagos, 
             Algolog serves a global clientele immersed in software engineering. 
             Our firm excels in an array of software  development domains, 
             ranging from Blockchain and Cloud Development to UI/UX and Machine Learning.
@@ -49,11 +56,39 @@
             Our multifaceted expertise and commitment to quality 
             bring both innovation and reliability to every project. 
             We personalize our services to meet your specific 
-            requirements and  challenges.  <br> <br> <br><button href="#" class="learn-more" >Learn More</button></p>
+            requirements and  challenges.  <br> <br> <br>
+            
+            <a href="about.html"><button href="about.html" class="learn-more" >Learn More</button></a></p>
             
     </section> 
-    
-    <section class="aside">
+ <style>
+   .problem {
+    letter-spacing: -0.5px;
+       font-family: 'Noto Sans TC';
+       font-size: 17.9289px; font-weight: 300; 
+       line-height: normal ; 
+   }
+   .fixer {
+    display: none;
+   }
+ @media (max-width:1000px) {
+   .problem {
+       display:none;
+   }
+   .para-text {
+    margin-top: -100px;
+   }
+   .fixer {
+    display: block;
+    margin-left: 5%;
+    letter-spacing: -0.5px;
+       font-family: 'Noto Sans TC';
+       font-size: 17.9289px; font-weight: 300; 
+       line-height: normal ; 
+   }
+ }
+ </style>
+    <section class="aside problem">
        <b > Contact Us</b> <br>
 <br>
 2061 Dape District <br>
@@ -66,8 +101,25 @@ info@algolog.co <br>
     
  </div>
  
- 
- 
+ <section class="fixer">
+  <b > Contact Us</b> <br>
+<br>
+2061 Dape District <br>
+Abuja, NGA <br> <br>
+
+info@algolog.co <br>
++1 408 728 6249 <br>
++234 808 396 5912 <br>
+</section>
+
+ <style>
+  .text-body, get-p {
+    letter-spacing: -0.5px;
+       font-family: 'Noto Sans TC';
+       font-size: 17.9289px; font-weight: 300; 
+       line-height: normal ; 
+  }
+ </style>
 <div class="container">
    <h1 class="services">Services</h1>
    <hr class="hr">
@@ -95,7 +147,7 @@ info@algolog.co <br>
         ensuring your AI-driven applications are robust, ethical, and effective.</p>
    </div>
    <hr class="hr">
-   <button href="#" class="learn-more" id="view-all" style="margin-left: 5%;">View All</button>
+  <a href="services.html"> <button href="about.html" class="learn-more" id="view-all" style="margin-left: 5%;">View All</button></a>
 </div>
 
 <div>
@@ -105,18 +157,35 @@ info@algolog.co <br>
 </div>
 <div class="get-in-touch">
     <div class="get-body">
-        <h1 style="font-family: orpheus pro; font-weight: lighter;">Get in Touch</h1>
+        <h1 style="font-family: orpheus pro; font-weight: lighter; font-size: 4em;">Get in Touch</h1>
+        <style>
+          .get-in-touch {
+            height: 65vh;
+          }
+          .get-p{
+            letter-spacing: -0.5px;
+       font-family: 'Noto Sans TC';
+       font-size: 17.9289px; font-weight: 300; 
+       line-height: normal ; 
+          }
+        </style>
    <p class="get-p"> Ready to take your software solutions to the next level? 
     Reach out to us today. With  our expertise across multiple domains, 
     we're committed to delivering value and driving innovation. 
     Let's start the conversation on how we can help you succeed.</p>
     </div>
-    <button href="#" class="learn-more" id="view-all" style="color: black; margin-left: 5%; ">Contact us</button>
+    <button href="contact-us.html" class="learn-more" id="view-all" style="color: black; margin-left: 5%; ">Contact us</button>
 </div>
 
 </div>
 
 <footer>
+  <style>
+    .wrappo {letter-spacing: -0.5px;
+       font-family: 'Noto Sans TC';
+       font-size: 17.9289px; font-weight: 300; 
+       line-height: normal ; }
+  </style>
     <div class="foot-algo">Algolog</div>
       <section class="wrappo">
         <div class="wrappo-one">2061 Dape District <br>
@@ -126,5 +195,16 @@ info@algolog.co <br>
                 info@algolog.co</div>
       </section>
 </footer>
+
+<script>
+  var body = document.body;
+
+  
+  
+    // Add the following lines
+    
+    var topBar = document.getElementsByClassName('hamburger')
+    body.style.overflow = navbar.classList.contains("active") ? "hidden" : "auto";
+</script>
   </body>
 </html>
