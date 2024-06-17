@@ -186,6 +186,14 @@ a.active, a:hover {
   font-family: 'orpheus pro';
   
 }
+@media (max-width:1000px) {
+    #flexbox-text {
+        font-size: 60px;
+    }
+    .algo-text {
+        font-size: 30px;
+    }
+}
 .para-text {
      font-size: 20px;
    
@@ -390,11 +398,12 @@ padding-left: 10%;
    background-color: #2a2829;
 }
 .algo-text{
-   font-size: 4em;
+   font-size: 5em;
    padding-left: 5%;
    padding-top: 3%;
-   padding-bottom: 3%;
+   padding-bottom: 5%;
    font-family: orpheus pro;
+   width: 80%;
 }
 
 
@@ -407,6 +416,7 @@ padding-left: 10%;
     font-size: 35px;
  
  }
+
  .para-text {
    
     height: auto;
