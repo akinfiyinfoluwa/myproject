@@ -59,12 +59,21 @@
             font-family: orpheus pro;
             font-size: 20px;
         }
+        .container {
+          margin-top: 18vh;
+        }
+        .container, .text-header, .text-body {
+          line-height: 1.3em;
+        }
+       .services {
+        padding-bottom: 8vh;
+       }
        </style>
           <div class="container" style="color: black; background-color: #e0e0db;">
             <h1 class="services">Services</h1>
             <hr class="hr">
             <div class="dark-box">
-             <p class="text-header">Blockchain Development</p> 
+             <p class="text-header">Blockchain <br class="breaker"> Development</p> 
              <p class="text-body">Blockchain technology promises a transparent, 
                 secure future for industries ranging from finance to healthcare. 
                 However, the technical intricacies and evolving regulations pose unique challenges. 
@@ -73,7 +82,7 @@
             </div>
             <hr class="hr">
             <div class="dark-box">
-                <p class="text-header">Front End Development</p> 
+                <p class="text-header">Front End <br class="breaker"> Development</p> 
                 <p class="text-body">In a digital world where first impressions matter, 
                     front end development is your gateway to user engagement. 
                     We specialize in crafting intuitive, responsive, and visually 
@@ -83,7 +92,7 @@
             
                <hr class="hr">
                <div class="dark-box">
-                <p class="text-header">Back End Development</p> 
+                <p class="text-header">Back End <br class="breaker"> Development</p> 
                 <p class="text-body">The efficiency and security of any software solution 
                     largely depend on robust back end development. Our expertise spans 
                     various server-side languages, databases, and server architectures. 
@@ -93,7 +102,7 @@
             
                <hr class="hr">
             <div class="dark-box">
-             <p class="text-header">Cloud Development & SRE</p> 
+             <p class="text-header">Cloud <br class="breaker"> Development &  <br class="breaker">SRE</p> 
              <p class="text-body">The cloud landscape is vast and versatile, 
                  and so are its potential pitfalls. We guide businesses through selecting cloud providers, 
                  migrating legacy systems, and implementing Site Reliability Engineering practices.With a focus on scalability and resilience, 
@@ -102,7 +111,7 @@
          
             <hr class="hr">
             <div class="dark-box">
-                <p class="text-header">DevOps & Automation</p> 
+                <p class="text-header">DevOps & <br class="breaker"> Automation</p> 
                 <p class="text-body">Automation and operational efficiency are at the heart of DevOps. 
                     Our team crafts bespoke CI/CD pipelines, containerization strategies, and automated monitoring solutions, 
                     so you can focus on innovation while we handle the systems that keep your engines running.</p>
@@ -110,7 +119,7 @@
             
                <hr class="hr">
             <div class="dark-box">
-             <p class="text-header">Machine Learning & AI</p> 
+             <p class="text-header">Machine Learning & <br class="breaker">AI</p> 
              <p class="text-body">From natural language processing to predictive analytics, 
                  machine learning and AI are reshaping industries. We offer end-to-end services 
                  in data engineering, algorithm training, and deployment, 
@@ -121,7 +130,7 @@
        <br> <br><br><br><br><br><br>
        <footer>
         <div class="foot-algo">Algolog</div>
-          <section class="wrappo">
+          <section class="wrappo" style="font-family: 'Noto Sans Tc', sans-serif; font-weight: 300;">
             <div class="wrappo-one">2061 Dape District <br>
                 Abuja</div>
                 <div class="wrappo-two">+1 408 728 6249 <br>
@@ -130,10 +139,30 @@
           </section>
     </footer>
     <style>
+      @media (min-width: 1300px) {
+        .text-body {
+          font-size: 1.7em;
+          width: 46%;
+        }
+
+      }
+        footer {
+          margin-top: 95em; 
+         
+        }
+       
       @media (max-width:858px){
          ul {
           color: white;
          }
+         footer {
+          margin-top: 85em; 
+          font-size: 13px;
+        }
+       
+        .breaker {
+          display: none;
+        }
       }
     </style>
       </body>
