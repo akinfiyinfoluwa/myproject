@@ -72,7 +72,7 @@
 }
 
 input[type=submit] {
-  background-color:rgb(7, 7, 39);
+  background-color:rgb(15, 15, 53);
   color: white;
   padding: 20px 35px;
   border: none;
@@ -83,7 +83,7 @@ input[type=submit] {
 
 
 input[type=submit]:hover {
-  background-color: #0d059c;
+  background-color: gray;
 }
 @media(max-width:1000px){
          .first{
@@ -119,9 +119,13 @@ input[type=submit]:hover {
             2061 Dape District <br>
             Abuja, NG.</p> <br> <br>
       </div>
+      
       <div class="second">
+        <label for="fname" style="width: 49%; bottom: 30px;" >Name <span style="color: gray;">(required)</span></label> 
     <form  id="contact-form">
+    
       <input type="hidden" name="contact_number" value="697483">
+   
           <div style="display: flex;">
             <label for="fname" style="width: 49%;">First Name</label>
             
@@ -134,18 +138,18 @@ input[type=submit]:hover {
             <input type="text" id="fname" name="user_name" placeholder="Your name.." style="width: 49%;">
             <input type="text" id="lname" name="user_name" placeholder="Your last name.." style="width: 49%; margin-left: 2%;">
           </div>
-        <label for="email">Email</label>
+        <label for="email">Email <span style="color: gray;">(required)</span></label>
         <input type="text" required id="lname" name="user_email" placeholder="Your email..">
-        <label for="subject" required >Message</label>
+        <label for="subject" required >Message <span style="color: gray;">(required)</span></label>
         <textarea id="subject" name="message" placeholder="Write something.." style="height:200px" required></textarea>
     
-        <input type="submit" value="Submit"  onclick="alert('Thanks, your message has been delivered!')">
+        <input type="submit" value="Send"  onclick="alert('Thanks, your message has been delivered!')">
     
     </form>
     <br> <br>
       </div>
     </div>
-    <footer>
+    <footer >
         <div class="foot-algo">Algolog</div>
           <section class="wrappo" style="font-family: 'Noto Sans Tc'; font-weight: 300 ;">
             <div class="wrappo-one">2061 Dape District <br>
