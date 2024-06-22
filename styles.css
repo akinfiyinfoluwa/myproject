@@ -186,13 +186,9 @@ a.active, a:hover {
     
 }
   
-  #flexbox {
-    width: 100%;
-    
-    font-weight: bold;
-    font-family: Bell MT;
-}
+
 #flexbox-text {
+    display: block;
     margin-top: -77vh;
   padding-top: 3vh;
   padding-left: 4%;
@@ -216,44 +212,22 @@ a.active, a:hover {
     height: auto;
 }
 
-.wrapper{
-    width:100%;
-    display:flex;
-   padding: 5%;
-   height: auto;
-    
-}
-.main {
-    width:60%;
-    height:auto;
-    display:flex;
-    margin-bottom: -4%;
-   
-}
-.aside{
-    height:50px;
-    width:20%;
-    display: block;
-    margin-top: -105px;
+
   
     
     
-}
+
 .para-text {
     margin-left: -2%;
     padding-top:15%; padding-right: 25%;
 }
 .body-heading {
-    padding-top: 6%;
-    margin-left: 4%;
+    
     font-family: orpheus pro;
     font-weight: lighter;
-    margin-bottom: -1.6em;
-    font-size:50px;
-    height: auto;
-    line-height: 60px;
-    width: 50%;
 
+    font-size:50px;
+    line-height: 60px;
   }
   .learn-more {
       background-size: 1em;
@@ -284,7 +258,7 @@ width: 100%;
 color: white;
 }
 
-.get-p, .wrappo,  .para-text, .main, .get-body, .aside, .problem, .fixer {
+.get-p, .wrappo,  .para-text, .main, .main-one, .get-body, .aside, .problem, .fixer, .aside-one {
     font-family: system-ui;
             font-size: 18px;
             font-weight: 370;
@@ -293,6 +267,39 @@ color: white;
 .text-body {
      padding-bottom: 100px;
 }
+.wrapper{
+    display:flex;
+   padding: 5%;
+   height: auto;
+   flex-direction: row;
+   gap: 120px;
+    
+}
+
+.main-one {
+     width: 50%;
+}
+.aside-one {
+    width: 20%;
+}
+
+@media (max-width:1000px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+       
+    }
+    .main-one {
+        width: 100%;
+        font-size: 15px;
+    }
+   .aside-one {
+      width: 100%;
+      font-size: 17px;
+   }
+}
+
   @media (min-width:1000px){
           .para-text{
             margin-top: -10%;
@@ -439,10 +446,7 @@ padding-left: 10%;
  
 
  .body-heading {
-    display: block;
    font-size: 30px;
-    width: 90%;
-    margin-left: 5%;
  
  }
 
@@ -453,6 +457,7 @@ padding-left: 10%;
   
     
  }
+
  .main {
     margin-top: -5%;
     display: block;
@@ -463,17 +468,7 @@ padding-left: 10%;
     width: 20em;
     height: 3.1em;
  }
- .aside {
-    margin-top: 18%;
-    width: 100%;
-    font-size: 20px ;  
-    padding-bottom: 30vh;
-    display: block;
-    
- }
- .wrapper {
-   margin-top: 100px;
- }
+
 
 
  .dark-box {
@@ -545,14 +540,6 @@ margin-bottom: 1em;
         width: 70vw;
         justify-content: center;
     }
-   #flexbox {
-    width: 102%;
-    height:55vh;
-    
-   }
-   #flexbox-text {
-    width: 80%;
-      margin-top: -153%;
-      margin-left: 5%;
-   }
+
+ 
 }
