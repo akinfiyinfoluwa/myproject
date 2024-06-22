@@ -314,7 +314,7 @@ color: white;
     background: #2a2829;
  
     width: 100%;
-    height: 70em;
+    height: 68em;
     color: white;
   }
   .services{
@@ -322,6 +322,7 @@ color: white;
      padding-top: 7%;
      font-size: 4.5em;
      font-weight: lighter;
+  
      
   }
   .dark-box {
@@ -337,9 +338,10 @@ color: white;
       font-family: orpheus pro;
   }
   .text-body {
-       width: 52%;
+       width: 51%;
        padding-left: 4%;
-       font-size: 1.1em;
+       font-size: 1.2em;
+       font-weight: 350;
        font-style: normal;
        font-optical-sizing: auto;
        font-family: 'sen', sans-serif;
@@ -431,6 +433,7 @@ padding-left: 10%;
      font-size: 2.5em;
      padding-bottom: 20px;
      padding-left: 6%;
+     font-family: orpheus pro;
  }
  
 
