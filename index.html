@@ -38,7 +38,7 @@
  <div class="wrapper">
    
     <section class="main"> 
-        <p class="para-text"  > 
+        <p class="para-text"  style=" font-family: 'Noto Sans TC', sans-serif; letter-spacing: 1px;"> 
           With our main hub in Abuja and satellite presence in Lagos, 
             Algolog serves a global clientele immersed in software engineering. 
             Our firm excels in an array of software  development domains, 
@@ -57,17 +57,23 @@
     </section> 
  <style>
    .problem {
-    letter-spacing: -0.5px;
+    letter-spacing: 1px;
        font-family: 'Noto Sans TC', sans-serif;
        font-size: 17.9289px; font-weight: 300; 
        line-height: normal ; 
+       
    }
    .fixer {
     display: none;
    }
+@media (max-width:550px) {
+ 
+
+}
  @media (max-width:1000px) {
+  
   .learn-more {
-    margin-top: 5em;
+   
     margin-bottom: 1em;
   }
  
@@ -80,7 +86,7 @@
    .fixer {
     display: block;
     margin-left: 5%;
-    letter-spacing: -0.5px;
+    letter-spacing: 1px;
        font-family: 'Noto Sans TC', sans-serif;
        font-size: 17.9289px; font-weight: 300; 
        line-height: normal ; 
@@ -90,7 +96,7 @@
  </style>
 
     <section class="aside problem">
-       <p> Contact Us</p> <br>
+       <p> <b>Contact Us</b></p> <br>
 <br>
 2061 Dape District <br>
 Abuja, NGA <br> <br>
@@ -115,10 +121,19 @@ info@algolog.co <br>
 </section>
  <style>
   .text-body, get-p {
-    letter-spacing: -0.5px;
-       font-family: 'Noto Sans TC', sans-serif;
+  
+    font-family:'Noto Sans Tc', sans-serif ;
        font-weight: 300; 
-       line-height: normal ; 
+    letter-spacing: 1px;
+      
+       /* font-optical-sizing: auto;
+    font-family: 'Noto Sans Tc', sans-serif; 
+    font-style: normal;
+    font-size: 14.9289px; 
+    font-weight: 300; 
+    letter-spacing: 1px; 
+    line-height: normal ; 
+    overflow-wrap: break-word;*/
      
   }
  </style>
@@ -165,10 +180,16 @@ info@algolog.co <br>
           .get-body{
             font-size: 1.7em;
             padding-bottom: 4vh;
+       
           
           }
-         
+       
           @media (max-width:1000px) {
+        .contain {
+               height: auto;
+                 margin-left: -1%;
+                 margin-bottom: 10%;
+        }
             .get-body{
             font-size: 1.5em;
             padding-top: 60px;
@@ -176,13 +197,14 @@ info@algolog.co <br>
           .get-p {
             width: 95%;
             padding-top: 20px;
-            padding-bottom: 20px;
+            padding-bottom: auto;
           }
           .get-in-touch {
             padding-left: 2%;
           }
           .shaker {
             margin-left: -2%;
+          
           }
           }
           .get-p{
@@ -193,9 +215,33 @@ info@algolog.co <br>
           }
           #view-all {
             padding-left: 20px;
+        
           }
+          @media (max-width:500px) {
+    .container {
+        height: auto;
+    }
+    #view-all, .learn-more {
+        width: 70vw;
+        justify-content: center;
+    }
+   #flexbox {
+    width: 102%;
+    height:55vh;
+    
+   }
+   #flexbox-text {
+    width: 80%;
+      margin-top: -140%;
+      margin-left: 5%;
+   }
+   .body-heading {
+    padding-top: 0em;
+    padding-bottom: 1px;
+   }
+}
         </style>
-   <p class="get-p"> Ready to take your software solutions to the next level? 
+   <p class="get-p" style="letter-spacing: 0.5px;"> Ready to take your software solutions to the next level? 
     Reach out to us today. With  our expertise across multiple domains, 
     we're committed to delivering value and driving innovation. 
     Let's start the conversation on how we can help you succeed.</p>
@@ -209,7 +255,7 @@ info@algolog.co <br>
   <style>
     .wrappo {letter-spacing: -0.5px;
        font-family: 'Noto Sans TC', sans-serif;
-       font-size: 17.9289px; font-weight: 300; 
+       font-size: 15px; font-weight: 300; 
        line-height: normal ; }
   </style>
     <div class="foot-algo">Algolog</div>
