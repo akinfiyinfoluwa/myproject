@@ -5,10 +5,15 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
-
+    box-sizing: border-box;    
     
   }
+
+
+
+  .destroy {
+    overflow: hidden;
+}
   #whole {
     padding-top: 2%;
     
@@ -16,17 +21,19 @@
   body{
     font-family: montserrat;
     background-color: #E0E0DB;
+    width: 100%;
   }
   
   nav {
     background: #2a2829;
     height: 80px;
     width: 100%;
+    
 }
 
 label.logo {
     line-height: 80px;
-    padding: 0 4%;
+  
 
     font-size: 32px;
 }
@@ -116,6 +123,7 @@ a.active, a:hover {
     label.logo {
         font-size: 23px;
         padding-left: 33px;
+       
     }
     
     nav ul li a {
@@ -129,7 +137,6 @@ a.active, a:hover {
       
         
     }
-  
     
     ul {
         position: absolute;
@@ -137,14 +144,17 @@ a.active, a:hover {
         height: 100%;
         background-color: #2a2829;
         top: 70px;
-       right: 100%;
+         opacity: 0;
         text-align: center;
+       
         
     }
     nav ul li {
         display: block;
         margin: 0px 0px;
         line-height: 55px;
+        
+    
        
      
     }
@@ -164,6 +174,8 @@ a.active, a:hover {
     }
     #check:checked ~ ul {
         left: 0;
+        opacity: 1;
+        transition: all 0.3s ease;
     }
     
 }
@@ -213,7 +225,7 @@ a.active, a:hover {
     
 }
 .main {
-    width:65%;
+    width:60%;
     height:auto;
     display:flex;
     margin-bottom: -4%;
@@ -273,7 +285,7 @@ width: 100%;
 color: white;
 }
 
-.get-p, .wrappo, .text-body, .para-text, .main, .get-body, .aside, .problem, .fixer {
+.get-p, .wrappo,  .para-text, .main, .get-body, .aside, .problem, .fixer {
     font-family: system-ui;
             font-size: 18px;
             font-weight: 370;
@@ -400,12 +412,12 @@ padding-left: 10%;
 }
 .contain {
     height: 62vh;
-    padding-left: 1%;
 }
 
 @media (max-width:1000px) {
     .contain {
         height: 64vh;
+        
     }
     .get-body h1 {
         font-size: 1.7em;
@@ -511,8 +523,7 @@ margin-bottom: 1em;
 
 }
 .wrappo-one {
-    padding-bottom: 3%;
-     width: 100%;
+   
      margin-left: 3%;
 }
 .wrappo-two {
