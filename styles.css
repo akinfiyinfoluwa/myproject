@@ -182,22 +182,22 @@ a.active, a:hover {
 .section {
     background:no-repeat;
     background-size: cover;
-    height: calc(100vh - 80px);
+    height: calc(100vh);
+    padding-top: -170vh;
     
 }
   
 
 #flexbox-text {
-    display: block;
-    margin-top: -77vh;
-  padding-top: 3vh;
+
+
   padding-left: 4%;
   
   font-size: 7.7vw;
   color: white;
   font-weight: lighter;
   font-family: 'orpheus pro';
-  padding-bottom: 2.7vh;
+  
    
 }
 
@@ -306,9 +306,7 @@ color: white;
           .para-text{
             margin-top: -10%;
           }
-          .flexbox{
-            font-size: 250px;
-          }
+       
   }
   #view-all{
     background-color: white;
@@ -427,13 +425,23 @@ padding-left: 10%;
 }
 .contain {
     height: auto;
+    max-height: 63vh;
 }
+#flexbox-text {
+    margin-top: 16vh;
+  }
+
 
 @media (max-width:1000px) {
     .contain {
-        height: auto;
         
+        max-height: 50vh;
+       
     }
+    #flexbox-text {
+        margin-top: 10vh;
+    }
+    
     .get-body h1 {
         font-size: 1.7em;
     }
@@ -549,6 +557,10 @@ margin-bottom: 1em;
         width: 70vw;
         justify-content: center;
     }
-
+    .contain {
+        
+        max-height: 60vh;
+       
+    }
  
 }
