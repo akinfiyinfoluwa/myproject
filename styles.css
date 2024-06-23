@@ -192,17 +192,20 @@ a.active, a:hover {
     margin-top: -77vh;
   padding-top: 3vh;
   padding-left: 4%;
-  padding-bottom: 13vh;
+  
   font-size: 7.7vw;
   color: white;
   font-weight: lighter;
   font-family: 'orpheus pro';
-  
+  padding-bottom: 2.7vh;
+   
 }
+
 @media (max-width:1000px) {
     #flexbox-text {
         font-size: 58px;
-        padding-top: 17%;
+         padding-top: 3vh;
+         
     }
     .algo-text {
         font-size: 30px;
@@ -424,12 +427,12 @@ padding-left: 10%;
     margin-left: 4%; margin-top: 1.8%;
 }
 .contain {
-    height: 62vh;
+    height: auto;
 }
 
 @media (max-width:1000px) {
     .contain {
-        height: 64vh;
+        height: auto;
         
     }
     .get-body h1 {
