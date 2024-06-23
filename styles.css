@@ -204,7 +204,6 @@ a.active, a:hover {
 @media (max-width:1000px) {
     #flexbox-text {
         font-size: 58px;
-         padding-top: 3vh;
          
     }
     .algo-text {
